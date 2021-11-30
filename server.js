@@ -1,5 +1,7 @@
-var http = require('http');
-http.createServer(function (req, res) {
-  res.write("I'm alive");
-  res.end();
-}).listen(8080);
+const app = require('express')();
+
+app.get('/', (req, res) => res.send('Server is up.'));
+
+module.exports = () => {
+  app.listen(3000);
+}
