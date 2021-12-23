@@ -7,7 +7,7 @@ let bot = new Client({
   presence: {
     status: 'online',
     activity: {
-      name: `${config.prefix}help`,
+      name: `${config.prefix}help or hp`,
       type: 'PLAYING'
     }
   }
@@ -22,11 +22,29 @@ bot.on('message', async message => {
     let command = args.shift().toLowerCase();
 
     switch (command) {
-
       case 'ping':
         let msg = await message.reply('Pinging...');
         await msg.edit(`PONG! Message round-trip took ${Date.now() - msg.createdTimestamp}ms.`)
         break;
+      
+      case 'pong':
+        let todf = await message.reply('Pinging...');
+        await todf.edit(`PING! https://bit.ly/3mo5YM4`)
+        break;
+
+      case 'rick':
+        let mgs = await message.reply('Checking...');
+        await mgs.edit(`bit.ly/31CzAhy`)
+        break;       
+
+      case 'stickbug':
+        let mesg = await message.reply('Checking...');
+        await mesg.edit(`bit.ly/3ye6vF9`)
+        break;       
+      
+      case 'info':
+        let info = await message.reply('Created on 08/03/2021, and created by ElijahWanczyk16#6165!');
+        break;       
 
       case 'say':
       case 'repeat':
@@ -37,6 +55,7 @@ bot.on('message', async message => {
         break
 
       /* Unless you know what you're doing, don't change this command. */
+      case 'hp':
       case 'help':
         let embed =  new MessageEmbed()
           .setTitle('HELP MENU')
