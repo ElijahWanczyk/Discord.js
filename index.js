@@ -43,7 +43,7 @@ bot.on('message', async message => {
         break;       
       
       case 'info':
-        let info = await message.reply('Created on 08/03/2021, and created by ElijahWanczyk16#6165!');
+        let info = await message.reply('Created on ??/??/20??, and created by Discorduser#0001!');
         break;       
 
       case 'say':
