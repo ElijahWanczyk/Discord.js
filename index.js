@@ -43,7 +43,7 @@ bot.on('message', async message => {
         break;       
       
       case 'info':
-        let info = await message.reply('Created on ??/??/20??, and created by Discorduser#0001!'); // put the date as what month/day/year you made the bot, and put your discord tag.
+        let info = await message.reply('Created on ??/??/20??, and created by Discorduser#0001!'); // put the date as what month/day/year or day/month/year you made the bot, and put your discord tag.
         break;       
 
       case 'say':
