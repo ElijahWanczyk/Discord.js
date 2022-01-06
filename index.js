@@ -28,7 +28,7 @@ bot.on('message', async message => {
         break;
       
       case 'pong':
-        let todf = await message.reply('Pinging...');
+        let todf = await message.reply('Ponging...');
         await todf.edit(`PING! https://bit.ly/3mo5YM4`)
         break;
 
