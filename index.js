@@ -28,8 +28,8 @@ bot.on('message', async message => {
         break;
       
       case 'pong':
-        let todf = await message.reply('Ponging...');
-        await todf.edit(`PING! https://bit.ly/3mo5YM4`)
+        let gsm = await message.reply('Ponging...');
+        await gsm.edit(`PING! https://bit.ly/3mo5YM4`)
         break;
 
       case 'rick':
@@ -51,7 +51,7 @@ bot.on('message', async message => {
         if (args.length > 0)
           message.channel.send(args.join(' '));
         else
-          message.reply('You did not send a message to repeat, cancelling command.')
+          message.reply('You did not send a message with the repeat or say command, cancelling command.')
         break
 
       /* Unless you know what you're doing, don't change this command. */
