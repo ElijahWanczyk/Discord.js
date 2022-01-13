@@ -33,12 +33,12 @@ bot.on('message', async message => {
         break;
 
       case 'rick':
-        let mgs = await message.reply('Checking...');
+        let mgs = await message.reply('Ricking...');
         await mgs.edit(`bit.ly/31CzAhy`)
         break;       
 
       case 'stickbug':
-        let mesg = await message.reply('Checking...');
+        let mesg = await message.reply('Bugging...');
         await mesg.edit(`bit.ly/3ye6vF9`)
         break;       
       
