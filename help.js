@@ -25,7 +25,7 @@ module.exports = {
     format: 'rick'
   },
   'stickbug': {
-    description: 'Stick on bez nuts',
+    description: 'Distraction Dance',
     format: 'stickbug'
   },
   'info': {
