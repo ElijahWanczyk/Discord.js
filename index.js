@@ -7,7 +7,7 @@ let bot = new Client({
   presence: {
     status: 'online',
     activity: {
-      name: `${config.prefix}help or hp`,
+      name: `${config.prefix}help or hp | as08.instatus.com`,
       type: 'PLAYING'
     }
   }
@@ -88,5 +88,5 @@ bot.on('message', async message => {
   }
 });
 
-require('./server')();
+require('./keep_alive')();
 bot.login(config.token);
