@@ -7,7 +7,7 @@ let bot = new Client({
   presence: {
     status: 'online',
     activity: {
-      name: `${config.prefix}help or hp | as08.instatus.com`,
+      name: `${config.prefix}help or hp,
       type: 'PLAYING'
     }
   }
